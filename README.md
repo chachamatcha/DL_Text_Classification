@@ -5,13 +5,13 @@ Collection of Deep Learning Text Classification Models in Keras; Includes a GPU 
 ***Disclaimer: The dataset for this repository contains text that may be considered profane, vulgar, or offensive.***
 
 ## Contents
-- [News](#News)
-- [Overview](#Contents-Summary)
-- [Competition and Inspiration](#Competition-and-Inspiration)
-- [Evaluation and Benchmarking](#Evaluation-and-Benchmarking)
-- [Data Overview](#Data-Overview)
-- [Models Covered](#Models-Covered)
-- [License](#LICENSE)
+- [News](#news)
+- [Overview](contents-summary)
+- [Competition and Inspiration](#competition-and-inspiration)
+- [Evaluation and Benchmarking](#evaluation-and-benchmarking)
+- [Data Overview](#data-overview)
+- [Models Covered](#models-covered)
+- [License](#license)
 
 ## News
 - 04/14/2018: tutorial v1.0 complete 
