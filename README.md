@@ -6,7 +6,7 @@ Collection of Deep Learning Text Classification Models in Keras; Includes a GPU 
 
 ## Contents
 - [News](#news)
-- [Overview](#contents-summary)
+- [Overview](contents-summary)
 - [Competition and Inspiration](#competition-and-inspiration)
 - [Evaluation and Benchmarking](#evaluation-and-benchmarking)
 - [Data Overview](#data-overview)
