@@ -66,6 +66,7 @@ You may obtain the the pretrained word embeddings (glove.42B.300d) here:
 
 ## Models Covered
 - BLSTM-2DCNN - https://arxiv.org/pdf/1611.06639.pdf
+- BGRU-2DCNN - *modification of:* https://arxiv.org/pdf/1611.06639.pdf
 - More to come *(eta: soon)*
 
 ## Hardware
