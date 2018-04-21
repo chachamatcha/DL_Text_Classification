@@ -17,6 +17,7 @@ Collection of Deep Learning Text Classification Models in Keras; Includes a GPU 
 - 04/14/2018: tutorial v1.0 complete 
 - 04/14/2018: utils added to models direction
 - 04/14/2018: utils tutorial complete
+- 04/21/2018: tutorial v1.2 complete
 
 ## Contents Summary
 - Collection of Deep Learning Text Classification Models and Benchmarks *(eta: soon)*
