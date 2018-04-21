@@ -18,12 +18,13 @@ Collection of Deep Learning Text Classification Models in Keras; Includes a GPU 
 - 04/14/2018: utils added to models direction
 - 04/14/2018: utils tutorial complete
 - 04/21/2018: tutorial v1.2 complete
+- 04/21/2018: added BLSTM-2DCNN and BGRU-2DCNN models
 
 ## Contents Summary
 - Collection of Deep Learning Text Classification Models and Benchmarks *(eta: soon)*
 - Python directory with reusable utils and models
 	- Py file with reusable utils
-	- Py file with models *(eta: soon)*
+	- Py file with models
 - A comprehensive and in-depth tutorial on NLP (classifying toxic comments), Deep Learning, and Keras. Using:
 	- Keras
 	- Text Classification Improved by Integrating Bidirectional LSTM with Two-dimensional Max Pooling (Peng Zhou, et al. 2016) https://arxiv.org/pdf/1611.06639.pdf
