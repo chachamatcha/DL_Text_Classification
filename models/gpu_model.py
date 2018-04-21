@@ -46,7 +46,7 @@ def blstm_2dcnn(maxlen, max_features, embed_size, embedding_matrix,
     x = Embedding(max_features, embed_size, weights=[embedding_matrix], input_length=maxlen)(inp)
     x = Dropout(embedding_dropout)(x)    
 
-    x = Bidirectional(CuDNNLSTM(300, return_sequences=True), merge_mode='sum')(x)
+    x = Bidirectional(CuDNNLSTM(blstm_units, return_sequences=True), merge_mode='sum')(x)
     x = Dropout(blstm_dropout)(x)
     x = Reshape((maxlen, blstm_units, 1))(x)
 
@@ -99,7 +99,7 @@ def bgru_2dcnn(maxlen, max_features, embed_size, embedding_matrix,
     x = Embedding(max_features, embed_size, weights=[embedding_matrix], input_length=maxlen)(inp)
     x = Dropout(embedding_dropout)(x)    
 
-    x = Bidirectional(CuDNNGRU(300, return_sequences=True), merge_mode='sum')(x)
+    x = Bidirectional(CuDNNGRU(bgru_units, return_sequences=True), merge_mode='sum')(x)
     x = Dropout(bgru_dropout)(x)
     x = Reshape((maxlen, bgru_units, 1))(x)
 
