@@ -6,13 +6,26 @@ from sklearn.metrics import roc_auc_score # roc from sklearn
 
 
 class RocAucEvaluation(Callback):
+    '''
+    Average column-wise RocAUC callback for Kera CV    
+    '''
     def __init__(self, validation_data=(), interval=1):
+        '''
+        :param validation_data: val data for the AUC calculation
+        :param interval: interval of epochs to report the column-wise AUC
+        '''
+        
         super(Callback, self).__init__()
 
         self.interval = interval
         self.X_val, self.y_val = validation_data
 
     def on_epoch_end(self, epoch, logs={}):
+        '''
+        :param epoch: current epoch
+        :param logs: dictionary log of metrics
+        '''
+        
         if epoch % self.interval == 0:
             y_pred = self.model.predict(self.X_val, verbose=0)
             score = roc_auc_score(self.y_val, y_pred)
@@ -27,6 +40,17 @@ def tok_embed(X_train, X_test,
               maxlen = 200, 
               embed_size = 300, 
               verbose=True):
+    '''
+    Tokenizes training and testing data. Creates word emdeddings matrix based on
+    test and train.
+    
+    :param X_train: training data
+    :param X_test: test data
+    :param max_features: max number of words to store indices of word embeddings
+    :param maxlen: max sequence length
+    :param embed_size: size(dimensions) of the word embedding file
+    :param verbose: verbose flag
+    '''
     
     if verbose:
         print('tokenizing...')
