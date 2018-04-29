@@ -19,9 +19,10 @@ Collection of Deep Learning Text Classification Models in Keras; Includes a GPU 
 - 04/14/2018: utils tutorial complete
 - 04/21/2018: tutorial v1.2 complete
 - 04/21/2018: added BLSTM-2DCNN and BGRU-2DCNN models
+- 04/28/2018: added benchmarks (BLSTM-2DCNN and BGRU-2DCNN)
 
 ## Contents Summary
-- Collection of Deep Learning Text Classification Models and Benchmarks *(eta: soon)*
+- Collection of Deep Learning Text Classification Models and Benchmarks
 - Python directory with reusable utils and models
 	- Py file with reusable utils
 	- Py file with models
