@@ -4,7 +4,7 @@ https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 '''
 
 # Keras
-from keras.layers import (Dense, Input, Bidirectional, Activation, Dropout, Embedding, Flatten, CuDNNLSTM, 
+from keras.layers import (Dense, Input, Bidirectional, Activation, Dropout, Embedding, Flatten, CuDNNLSTM, CuDNNGRU,
                           Conv2D, MaxPool2D, concatenate, K, Reshape, LSTM)
 from keras.models import Model
 from keras import regularizers
